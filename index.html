@@ -97,7 +97,7 @@
 		  if (targetEl == flyoutE2) {
 			consecutiveClick = 0;
 			document.getElementById("flyout-text").textContent = consecutiveClick;
-			if (localStorage) {
+			if (typeof(localStorage) !== "undefined") {
 				localStorage.consecutiveClick = 0;
 				localStorage.consecutiveClickRecord = 0;
 				document.getElementById("flyout-record").textContent = "0";
